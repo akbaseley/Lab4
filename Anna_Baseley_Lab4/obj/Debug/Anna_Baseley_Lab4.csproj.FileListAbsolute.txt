@@ -1,0 +1,7 @@
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\obj\Debug\Anna_Baseley_Lab4.csprojResolveAssemblyReference.cache
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\obj\Debug\Anna_Baseley_Lab4.csproj.CoreCompileInputs.cache
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\bin\Debug\Anna_Baseley_Lab4.exe.config
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\bin\Debug\Anna_Baseley_Lab4.exe
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\bin\Debug\Anna_Baseley_Lab4.pdb
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\obj\Debug\Anna_Baseley_Lab4.exe
+C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab4\Anna_Baseley_Lab4\obj\Debug\Anna_Baseley_Lab4.pdb
