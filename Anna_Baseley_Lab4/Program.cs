@@ -12,21 +12,18 @@ namespace Anna_Baseley_Lab4
         {
 
             Console.WriteLine("Let's refresh your Geometry!!");
-
-            while (true)
+            bool Repeat = true;    
+            while (Repeat)
             {
                 //input
                 int UserNumber = GetNumber("Please enter a number!");
 
 
                 //Process & Output
-                Console.Write($"{"Number",-10}");
-                Console.Write($"{"Squared",-10}");
-                Console.WriteLine("Cubed");
+                Console.WriteLine($"{"Number",-10}{"Squared",-10}{"Cubed", -10}");
 
-                Console.Write($"{"******",-10}");
-                Console.Write($"{"*******",-10}");
-                Console.WriteLine("*****");
+                Console.WriteLine($"{"******",-10}{"*******",-10}{"*****", -10}");
+
 
                 for (int i = 1; i <= UserNumber; i++)
                 {
@@ -34,16 +31,10 @@ namespace Anna_Baseley_Lab4
                     int squared = i * i;
                     int cubed = squared * i;
 
-                    Console.Write($"{number,-10}");
-                    Console.Write($"{squared,-10}");
-                    Console.WriteLine($"{cubed}");
-                }
+                    Console.WriteLine($"{number,-10}{squared,-10}{cubed, -10}");
 
-
-                //Continue?
-                if (UserContinue() == false)
-                {
-                    break;
+                    //Continue
+                    Repeat = UserContinue();                                 
                 }
             }
         }
@@ -59,16 +50,15 @@ namespace Anna_Baseley_Lab4
             Console.WriteLine("Would you like to continue? y/n");
             String UserContinue = Console.ReadLine();
 
+            while (UserContinue.ToLower() != "y" && UserContinue.ToLower() != "n")
+            {
+                Console.WriteLine("What was that?  Would you like to continue? y/n");
+                UserContinue = Console.ReadLine();
+            }
+
             while (true)
             {
-
-                if (UserContinue.ToLower() != "y" && UserContinue.ToLower() != "n")
-                {
-                    Console.WriteLine("What was that?  Would you like to continue? y/n");
-                    UserContinue = Console.ReadLine();
-                }
-
-                else if (UserContinue.ToLower() == "n")
+                if (UserContinue.ToLower() == "n")
                 {
                     Console.WriteLine("Okay!  See you next time!");
                     return false;
