@@ -33,15 +33,16 @@ namespace Anna_Baseley_Lab4
 
                     Console.WriteLine($"{number,-10}{squared,-10}{cubed, -10}");
 
-                    //Continue
-                    Repeat = UserContinue();                                 
                 }
+                //Continue
+                Repeat = UserContinue();
             }
         }
         public static int GetNumber(string Message)
         {
             Console.WriteLine(Message);
-            int UserNumber = int.Parse(Console.ReadLine());
+            int UserNumber;
+            while (!int.TryParse(Console.ReadLine(), out UserNumber)) ;
             return UserNumber;
         }
         public static bool UserContinue()
@@ -56,17 +57,14 @@ namespace Anna_Baseley_Lab4
                 UserContinue = Console.ReadLine();
             }
 
-            while (true)
+            if (UserContinue.ToLower() == "n")
             {
-                if (UserContinue.ToLower() == "n")
-                {
-                    Console.WriteLine("Okay!  See you next time!");
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+                Console.WriteLine("Okay!  See you next time!");
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
     }
